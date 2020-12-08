@@ -5,7 +5,7 @@ const Article = require('./models/article')
 // for Deleting we are using method-override Library 
 const methodOverride = require('method-override')
 
-mongoose.connect('mongodb://localhost/blog',
+mongoose.connect('mongodb+srv://root:admin@blogproject.xwzww.mongodb.net/blog?retryWrites=true&w=majority',
 { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
 
 const app = express()
